@@ -6,10 +6,10 @@ import Title from './Title';
 import 'styles/contact.css';
 
 const social = {
-    facebook: '',
-    instagram: '',
-    linkedIn: '',
-    github: '',
+    github: 'https://github.com/kacapka',
+    linkedIn: 'https://www.linkedin.com/in/wojciech-urba%C5%84ski-086127100/',
+    facebook: 'https://www.facebook.com/profile.php?id=100008594897039',
+    instagram: 'https://www.instagram.com/_kacapka/',
 }
 
 class Contact extends Component {

@@ -16,7 +16,7 @@ const projects = {
     bj: {
         name: 'bazajedzenia.pl',
         tools: ['React', 'Redux', 'Google Maps', 'Firebase'],
-        link: '',
+        link: 'https://bazajedzenia-abb0a.firebaseapp.com/',
         source: ''
     },
     wt: {
@@ -29,7 +29,7 @@ const projects = {
         name: 'Portfolio',
         tools: ['React', 'Redux'],
         link: '',
-        source: ''
+        source: 'https://github.com/kacapka/portfolio'
     }
 }
 
@@ -103,7 +103,7 @@ class Projects extends Component {
                     <ul className={`projects__list projects__box ${boxClassName}`}>
                         {_.map(projects, (value, key) => (
                             <li key={key}>
-                                <span>{value.name}</span>
+                                <a href={value.link} target='_blank'>{value.name}</a>
                             </li>
                         ))}
                     </ul>

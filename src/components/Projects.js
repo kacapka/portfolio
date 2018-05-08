@@ -16,8 +16,8 @@ const projects = {
     bj: {
         name: 'bazajedzenia.pl',
         tools: ['React', 'Redux', 'Google Maps', 'Firebase'],
-        link: '',
-        source: ''
+        link: 'https://bazajedzenia-abb0a.firebaseapp.com/',
+        source: 'https://github.com/kacapka/bazajedzenia'
     },
     wt: {
         name: 'Wasyl Team',
@@ -29,7 +29,7 @@ const projects = {
         name: 'Portfolio',
         tools: ['React', 'Redux'],
         link: '',
-        source: ''
+        source: 'https://github.com/kacapka/portfolio'
     }
 }
 

@@ -39,7 +39,7 @@
 .about__photo-wrapper {
     position: relative;
     height: 100%;
-    width: auto;
+    width: 15%;
     display: flex;
     justify-content: flex-end;
 }
@@ -57,7 +57,7 @@
 
 .about__photo {
     height: 100%;
-    width: auto;
+    width: 100%;
     z-index: 90;
 }
 
@@ -101,11 +101,15 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 80px;
+    padding: 60px;
     padding-right: 100px;
     font-size: 1.2rem;
+}
+
+.about__more p {
+    margin-top: 30px;
 }
 
 .about__link {
@@ -147,10 +151,18 @@
         padding: 50px;
     }
     
+    .about__photo-wrapper {
+        width: 17%;
+    }
+    
 }
 
 
 @media only screen and (max-width: 1023px) {
+    
+    .about__photo-wrapper {
+        width: 25%;
+    }
     
 }
 

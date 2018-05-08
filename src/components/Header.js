@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-//import { Link } from 'react-router-dom';
+import isTouchDevice from '../utils/detectTouchDevice';
 
 import { toggleNav, toggleTitle, setLanguage } from 'actions/actions';
 
@@ -18,7 +18,9 @@ class Header extends Component {
     }
     
     navHoverOn() {
-        !this.props.isNavOpen && document.body.classList.add('nav-hover');
+        if(!isTouchDevice() && !this.props.isNavOpen) {
+            document.body.classList.add('nav-hover');
+        } 
     }
     
     navHoverOut() {

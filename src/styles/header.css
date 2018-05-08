@@ -63,6 +63,7 @@
     transition: all .05s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
+
 .nav-hover .header__icon-line:nth-child(1) {
     width: 25px;
 }
@@ -145,12 +146,12 @@
 }
 
 
-/* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
     
 }
 
-/* Small phones to small tablets: from 481px to 767px */
+
+
 @media only screen and (max-width: 767px) {
     
     .header__language {
@@ -216,9 +217,6 @@
         width: 0;
     }
     
-    .header__nav-icon div {
-        
-    }
     
     .header__nav-icon--open div {
         transform: translateY(3px);

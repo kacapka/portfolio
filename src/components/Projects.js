@@ -22,13 +22,13 @@ const projects = {
     wt: {
         name: 'Wasyl Team',
         tools: ['React', 'Redux', 'Rest API'],
-        link: '',
-        source: ''
+        link: 'https://github.com/kacapka/wasylteam',
+        source: 'https://github.com/kacapka/wasylteam'
     },
     portfolio: {
         name: 'Portfolio',
         tools: ['React', 'Redux'],
-        link: '',
+        link: 'https://kacapka.github.io/portfolio/',
         source: 'https://github.com/kacapka/portfolio'
     }
 }
@@ -103,7 +103,7 @@ class Projects extends Component {
                     <ul className={`projects__list projects__box ${boxClassName}`}>
                         {_.map(projects, (value, key) => (
                             <li key={key}>
-                                <span>{value.name}</span>
+                                <a href={value.link} target='_blank'>{value.name}</a>
                             </li>
                         ))}
                     </ul>

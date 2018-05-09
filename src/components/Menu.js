@@ -38,7 +38,7 @@ class Menu extends Component {
                 <ul className='menu__navbar'>
                     {_.map(listData, (val, key) => (
                         <li key={key}>
-                            <Link to={`/${key}`} 
+                            <Link to={`${process.env.PUBLIC_URL}/${key}`} 
                                 className={`menu__navbar-item menu__navbar-item--${key}`}
                                 onClick={() => this.onItemClick(key)}
                             >

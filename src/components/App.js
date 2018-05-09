@@ -12,39 +12,20 @@ import Contact from './Contact';
 
 import { toggleTitle, setActiveMenuItem  } from 'actions/actions';
 
-import lang from '../utils/language';
+import lang from 'utils/language';
 
 import 'styles/app.css';
 import 'styles/content.css';
 
 class App extends Component {
     
-    /*constructor(props) {
-        super(props);
-        
-        this.handleScroll = this.handleScroll.bind(this);
-    }*/
-    
     componentDidMount() {
         const { toggleTitle, setActiveMenuItem, location: { pathname } } = this.props,
-        path = pathname.slice(1);
+        path = pathname.slice(11);
         setTimeout(toggleTitle, 200);
         path && setActiveMenuItem(path);
-        
-//        window.addEventListener('scroll', this.handleScroll);
     }
     
-    /*componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
-    
-    handleScroll() {
-        
-        console.log('hey');
-    
-    }*/
-    
-
     render() {
         const { isNavOpen, language } = this.props,
         data = lang[language],
@@ -56,10 +37,10 @@ class App extends Component {
                 <Menu />
                 <div className={`content ${contentClassName}`} ref={div => this.div = div} >
                     <Switch>
-                        <Route path='/projects' render={(props) => ( <Projects data={data.projects}/> )} />
-                        <Route path='/about' render={(props) => ( <About data={data.about}/> )} />
-                        <Route path='/contact' render={(props) => ( <Contact data={data.contact} /> )} />
-                        <Route path='/' render={(props) => ( <Home data={data.home} /> )} />
+                        <Route path={process.env.PUBLIC_URL + '/projects'} render={(props) => ( <Projects data={data.projects} /> )} />
+                        <Route path={process.env.PUBLIC_URL + '/about'} render={(props) => ( <About data={data.about}/> )} />
+                        <Route path={process.env.PUBLIC_URL + '/contact'} render={(props) => ( <Contact data={data.contact} /> )} />
+                        <Route path={process.env.PUBLIC_URL + '/'} render={(props) => ( <Home data={data.home} /> )} />
                     </Switch>
                 </div>
             </Fragment>

@@ -40,10 +40,11 @@
     padding: 80px;
     opacity: 0;
     transition: opacity .2s ease;
+    font-size: 1.2rem;
 }
 
 .contact__box:nth-child(1) {
-    margin-left: 50px;
+    margin-left: 100px;
     flex: 2;
 }
 
@@ -65,8 +66,8 @@
 }
 
 .contact__social li {
+    margin: 10px;
     padding: 5px;
-    margin: 5px;
 }
 
 .contact__social li a {
@@ -78,15 +79,25 @@
 /*media queries*/
 @media only screen and (max-width: 1400px) {
     
+    .contact__box {
+        font-size: 1rem;
+    }
+    
+    .contact__box:nth-child(1) {
+        margin-left: 50px;
+    }   
+    
+    .contact__social li {
+        margin: 5px;
+    }
+    
 }
 
 
-/* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
     
 }
 
-/* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
     
     .contact {

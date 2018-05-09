@@ -45,6 +45,7 @@
     position: absolute;
     top: 50vh;
     left: 10%;
+    font-size: 1.2rem;
 }
 
 .projects__list li {
@@ -52,12 +53,7 @@
     margin: 5px;
 }
 
-.projects__list li {
-    padding: 5px;
-    margin: 5px;
-}
-
-.projects__list li span {
+.projects__list li a {
     padding: 2px;
     background-color: var(--light);
 }
@@ -68,7 +64,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px 40px;
+    padding: 40px 60px;
 }
 
 .projects__details {
@@ -81,7 +77,9 @@
 .projects__name {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     margin-bottom: 5px;
+    font-size: 1.2rem;
 }
 
 .projects__name span {
@@ -91,7 +89,7 @@
 .projects__name a {
     color: var(--gray);
     margin-right: 20px;
-    font-size: .9rem;
+    font-size: 1.1rem;
 }
 
 .projects__name a:hover {
@@ -99,7 +97,7 @@
 }
 
 .projects__tools {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     display: flex;
     justify-content:flex-end;
     flex-wrap: wrap;
@@ -107,13 +105,13 @@
 
 .projects__tools span {
     color: var(--projects);
-    font-size: .8rem;
+    font-size: 1rem;
     margin-left: 10px;
 }
 
 .projects__description {
-    font-size: .7rem;
-    padding-left: 50px;
+    font-size: .9rem;
+    padding-left: 70px;
 }
 
 .projects__box {
@@ -130,24 +128,37 @@
 /*media queries*/
 @media only screen and (max-width: 1400px) {
     
+    .projects__list {
+        font-size: 1rem;
+    }
+    
+    .projects__info {
+        padding: 20px 40px;
+    }
+    
+    .projects__name {
+        font-size: .9rem;
+    }
+    
+    .projects__tools {
+        font-size: .8rem;
+        margin-bottom: 7px;
+    }
+    
+    .projects__description {
+        font-size: .8rem;
+        padding-left: 50px;
+    }
+    
 }
 
 
-/* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
     
 }
 
-/* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-    
-/*
-    remove
-    .projects {
-        height: auto;
-    }
-*/
-    
+        
     .projects__wrapper {
         height: 100vh;
     }
@@ -208,6 +219,7 @@
     }
     
     .projects__description {
+        font-size: .7rem;
         padding: 0;
     }
     

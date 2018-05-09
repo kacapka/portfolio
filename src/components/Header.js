@@ -47,7 +47,7 @@ class Header extends Component {
         return(
             <Fragment>
                 <div className={`header__logo ${logoClassName}`}>
-                    <a href='/' onClick={this.onLogoClick}>
+                    <a href={process.env.PUBLIC_URL} onClick={this.onLogoClick}>
                         kacapka
                     </a>
                 </div>

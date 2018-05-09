@@ -19,9 +19,9 @@ const lang = {
                 name: "Cześć, nazywam się Wojtek Urbański.",
                 description: <h3>Tworzę <span>super</span> strony internetowe.</h3>
             },
-            description: <p>Jetsem front-end developerem, miłośnikiem JavaScriptu i technologii webowych. Swoją przygodę z kodowaniem zacząłem ponad rok temu czego owocem była moja piersza <a href='https://kacapka.github.io/genius/' target='_blank' className='about__link'>strona.</a> Wraz z czasem stawiałem sobie wyżej poprzeczkę i realizowałem kolejne <a href='/projects' className='about__link'>projekty.</a> Aktualnie pracuje przy użyciu ReactJS oraz Redux. Nie jestem fanem jQery oraz bootstrap. W swoich pracach również nie używam gotowych layoutów. W kolejnych projektach chciałbym tworzyć unikatowe aplikacje, które będą wymagać odemnie ciągłego rozwoju i rozwiązywania nowych problemów.</p>,
+            description: <p>Jetsem front-end developerem, miłośnikiem JavaScriptu i technologii webowych. Swoją przygodę z kodowaniem zacząłem ponad rok temu czego owocem była moja piersza <a href='https://kacapka.github.io/genius/' target='_blank' className='about__link'>strona.</a> Wraz z czasem stawiałem sobie wyżej poprzeczkę i realizowałem kolejne <a href={process.env.PUBLIC_URL + '/projects'} className='about__link'>projekty.</a> Aktualnie pracuje przy użyciu ReactJS oraz Redux. Nie jestem fanem jQery oraz bootstrap. W swoich pracach również nie używam gotowych layoutów. W kolejnych projektach chciałbym tworzyć unikatowe aplikacje, które będą wymagać odemnie ciągłego rozwoju i rozwiązywania nowych problemów.</p>,
             more: 'Poza kodowanie wolny czas spędzam w Crossfitowym boxie. Kasę i urlop przeznaczam na podróże.',
-            contact: <p>Jeśli chcesz mnie zatrudnić lub wspólnie stworzyć ciekawy projekt zapraszam do <a href='/contact' className='about__link'>kontaktu.</a></p>
+            contact: <p>Jeśli chcesz mnie zatrudnić lub wspólnie stworzyć ciekawy projekt zapraszam do <a href={process.env.PUBLIC_URL + '/contact'} className='about__link'>kontaktu.</a></p>
         },
         projects: {
             title: {
@@ -66,9 +66,9 @@ const lang = {
                 name: "Hi, I am Wojtek Urbański.",
                 description: <h3>I make <span>cool</span> websites.</h3>
             },
-            description: <p>I am front-end developer, I am enthusiast of JavaScript and web technologies. I began my journey as a web developer about year and a half ago, when I made my <a href='https://kacapka.github.io/genius/' target='_blank' className='about__link'>first website.</a> With the passage of time, I set a very high standard for myself so I could code more challenging <a href='/projects' className='about__link'>projects.</a> Now, I work with ReactJS and Redux. I am not a supporter of jQuery and bootstrap. I also don't use template layouts. I would like to work on interesting projects, create unique solutions and solve new problems.</p>,
+            description: <p>I am front-end developer, I am enthusiast of JavaScript and web technologies. I began my journey as a web developer about year and a half ago, when I made my <a href='https://kacapka.github.io/genius/' target='_blank' className='about__link'>first website.</a> With the passage of time, I set a very high standard for myself so I could code more challenging <a href={process.env.PUBLIC_URL + '/projects'} className='about__link'>projects.</a> Now, I work with ReactJS and Redux. I am not a supporter of jQuery and bootstrap. I also don't use template layouts. I would like to work on interesting projects, create unique solutions and solve new problems.</p>,
             more: 'I enjoy crossfit, where I spent my free time. I also like travel and explore the world.',
-            contact: <p>Please <a href='/contact' className='about__link'>contact </a> me if you would like to work on a project together, or want to hire me.</p>
+            contact: <p>Please <a href={process.env.PUBLIC_URL + '/contact'} className='about__link'>contact </a> me if you would like to work on a project together, or want to hire me.</p>
         },
         projects: {
             title: {

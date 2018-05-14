@@ -22,7 +22,7 @@ const projects = {
     wt: {
         name: 'Wasyl Team',
         tools: ['React', 'Redux', 'Rest API'],
-        link: 'https://github.com/kacapka/wasylteam',
+        link: 'https://kacapka.github.io/wasylteam/',
         source: 'https://github.com/kacapka/wasylteam'
     },
     portfolio: {

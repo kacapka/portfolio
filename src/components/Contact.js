@@ -7,7 +7,7 @@ import 'styles/contact.css';
 
 const social = {
     github: 'https://github.com/kacapka',
-    linkedIn: 'https://www.linkedin.com/in/wojciech-urba%C5%84ski-086127100/',
+    linkedIn: 'https://www.linkedin.com/in/wojciech-urbanski/',
     facebook: 'https://www.facebook.com/profile.php?id=100008594897039',
     instagram: 'https://www.instagram.com/_kacapka/',
 }

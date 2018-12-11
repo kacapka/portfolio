@@ -45,10 +45,10 @@ class About extends Component {
                         <h2>{data.greeting.name}</h2>
                         {data.greeting.description}
                     </div>
-                    <div className={`about__box about__photo-wrapper ${boxClassName}`}>
-                        <img src={Me} alt='me' className='about__photo'/>
-                        <div className='about__gradient'></div>
-                    </div>    
+                    {/*<div className={`about__box about__photo-wrapper ${boxClassName}`}>*/}
+                        {/*<img src={Me} alt='me' className='about__photo'/>*/}
+                        {/*<div className='about__gradient'></div>*/}
+                    {/*</div>    */}
                 </div>
                 <div className='content__bottom about__bottom'>
                     <div className={`about__box about__description ${boxClassName}`}>

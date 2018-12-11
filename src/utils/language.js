@@ -19,7 +19,7 @@ const lang = {
                 name: "Cześć, nazywam się Wojtek Urbański.",
                 description: <h3>Tworzę <span>super</span> strony internetowe.</h3>
             },
-            description: <p>Jetsem front-end developerem, miłośnikiem JavaScriptu i technologii webowych. Swoją przygodę z kodowaniem zacząłem ponad rok temu czego owocem była moja piersza <a href='https://kacapka.github.io/genius/' target='_blank' className='about__link'>strona.</a> Wraz z czasem stawiałem sobie wyżej poprzeczkę i realizowałem kolejne <a href={process.env.PUBLIC_URL + '/projects'} className='about__link'>projekty.</a> Aktualnie pracuje przy użyciu ReactJS oraz Redux. Nie jestem fanem jQery oraz bootstrap. W swoich pracach również nie używam gotowych layoutów. W kolejnych projektach chciałbym tworzyć unikatowe aplikacje, które będą wymagać odemnie ciągłego rozwoju i rozwiązywania nowych problemów.</p>,
+            description: <p>Jetsem front-end developerem, miłośnikiem JavaScriptu i technologii webowych. Swoją przygodę z kodowaniem zacząłem 2 lata temu kiedy stworzyłem swoją pierwszą <a href='https://kacapka.github.io/genius/' target='_blank' className='about__link'>strona.</a> Wraz z czasem stawiałem sobie wyżej poprzeczkę i realizowałem kolejne <a href={process.env.PUBLIC_URL + '/projects'} className='about__link'>projekty.</a> Aktualnie pracuje przy użyciu ReactJS oraz Redux. Nie jestem fanem jQery oraz bootstrap. W swoich pracach również nie używam gotowych layoutów. W kolejnych projektach chciałbym tworzyć unikatowe aplikacje, które będą wymagać odemnie ciągłego rozwoju i rozwiązywania nowych problemów.</p>,
             more: 'Poza kodowanie wolny czas spędzam w Crossfitowym boxie. Kasę i urlop przeznaczam na podróże.',
             contact: <p>Jeśli chcesz mnie zatrudnić lub wspólnie stworzyć ciekawy projekt zapraszam do <a href={process.env.PUBLIC_URL + '/contact'} className='about__link'>kontaktu.</a></p>
         },
@@ -33,6 +33,7 @@ const lang = {
                 cf: 'Strona boxu crossfitowego. Jest to mój pierwszy projekt wykonany w celu testowania oraz wdrażania nabytych umiejętności z użyciem html, css oraz JS. Tu napisałem pierszą funkcję, pierwszą animację oraz responsywny wygląd.',
                 bj: 'Wyszukiwarka lokali gastronomicznych dla miasta Warszawa. W ramach nauki postanowiłem przekóć mój niedoszly startup w działający produkt. Aplikacja webowa opierająca się głównie na interfejsie mapy. Projekt stworzony na paczce react-create-app. W celu autoryzacji uzytkowników oraz zastosowaniu bazy danych użyłem Firebase. (baza lokali nieaktualna).',
                 wt: 'Aplikacja webowa do zarządzania oraz sprzedaży planów treningowych. Projekt zawiera stronę dla użytkowników - sprzedaż planów i ich zawartość, oraz panelu admina - zarządzanie treścią. Po mojej stronie wykonana została część dla użytkowników oraz wygląd panelu admina. Jest to mój pierwszy projekt napisany w ReactJS - Redux.',
+                mig: 'Sklep internetowy z odzieżą marki GENIUS. Projekt obejmuje responsywną stornę dl klienta, oraz dedytkowany sytem cms dla właściciela. W celu testowania dostępnych funkcjonalności, oraz wglądu do panelu admina użyj loginu: TEST@ADMIN.PL oraz hasła: TESTADMIN.',
                 portfolio: 'Projekt oparty na szablonie create-react-app. Prosty interfejs, który w głownej mierze oparty jest na dynamicznie zmienijących się stylach.'
             }
         },
@@ -66,7 +67,7 @@ const lang = {
                 name: "Hi, I am Wojtek Urbański.",
                 description: <h3>I make <span>cool</span> websites.</h3>
             },
-            description: <p>I am front-end developer, I am enthusiast of JavaScript and web technologies. I began my journey as a web developer about year and a half ago, when I made my <a href='https://kacapka.github.io/genius/' target='_blank' className='about__link'>first website.</a> With the passage of time, I set a very high standard for myself so I could code more challenging <a href={process.env.PUBLIC_URL + '/projects'} className='about__link'>projects.</a> Now, I work with ReactJS and Redux. I am not a supporter of jQuery and bootstrap. I also don't use template layouts. I would like to work on interesting projects, create unique solutions and solve new problems.</p>,
+            description: <p>I am front-end developer, I am enthusiast of JavaScript and web technologies. I began my journey as a web developer 2 years ago, when I made my <a href='https://kacapka.github.io/genius/' target='_blank' className='about__link'>first website.</a> With the passage of time, I set a very high standard for myself so I could code more challenging <a href={process.env.PUBLIC_URL + '/projects'} className='about__link'>projects.</a> Now, I work with ReactJS and Redux. I am not a supporter of jQuery and bootstrap. I also don't use template layouts. I would like to work on interesting projects, create unique solutions and solve new problems.</p>,
             more: 'I enjoy crossfit, where I spent my free time. I also like travel and explore the world.',
             contact: <p>Please <a href={process.env.PUBLIC_URL + '/contact'} className='about__link'>contact </a> me if you would like to work on a project together, or want to hire me.</p>
         },
@@ -79,7 +80,7 @@ const lang = {
             description: {
                 cf: 'Crossfit box website. My first project, created to test my knowledge about HTML, CSS and pure JavaScript. My first function, animation and RWD.',
                 bj: 'I decided to turn my startup idea into product. Web app for exploring and searching food corners in Warsaw. Project based on Google Maps API, created with ReactJS (create-react-app) and Redux. As a databse and user authentication I used Firebase.',
-                wt: 'Web app for personal trainer to manage and sell training plans. It has two parts, one for users and another for admin. I was responsible for front-end stuff in first part (users website) and styling second (admin panel). ',
+                mig: <p>E-commerce project with love to GENIUS. Responsive, minimalism design for client part. Cms panel made from scratch, dedicated for client needs. For testing purpose visit <a href='https://madeingenius.herokuapp.com/admin' target='_blank' className='projects__description__link'>this page</a>. Use login: test@admin.pl and password: testadmin. Feel free to mess around with products and database, test functionality and of course hit me with feedback.</p>,
                 portfolio: 'Portfolio created with boilerplate create-react-app. Simple interface mostly based on dynamically changing styles.'
             }
         },

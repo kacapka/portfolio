@@ -19,11 +19,11 @@ const projects = {
         link: 'https://bazajedzenia-abb0a.firebaseapp.com/',
         source: 'https://github.com/kacapka/bazajedzenia'
     },
-    wt: {
-        name: 'Wasyl Team',
-        tools: ['React', 'Redux', 'Rest API'],
-        link: 'https://kacapka.github.io/wasylteam/',
-        source: 'https://github.com/kacapka/wasylteam'
+    mig: {
+        name: 'Genius store',
+        tools: ['React', 'Redux', 'Meteor', 'MongoDB', 'Sass'],
+        link: 'https://geniusstore.herokuapp.com',
+        source: 'https://github.com/kacapka/geniusstore'
     },
     portfolio: {
         name: 'Portfolio',
@@ -31,7 +31,7 @@ const projects = {
         link: 'https://kacapka.github.io/portfolio/',
         source: 'https://github.com/kacapka/portfolio'
     }
-}
+};
 
 class Projects extends Component {
     
@@ -122,6 +122,6 @@ class Projects extends Component {
 
 const mapStateToProps = state => ({
     isTitle: state.isTitle
-})
+});
 
 export default connect(mapStateToProps)(Projects);

@@ -37,10 +37,10 @@ class App extends Component {
                 <Menu />
                 <div className={`content ${contentClassName}`} ref={div => this.div = div} >
                     <Switch>
-                        <Route path={process.env.PUBLIC_URL + '/projects'} render={(props) => ( <Projects data={data.projects} /> )} />
-                        <Route path={process.env.PUBLIC_URL + '/about'} render={(props) => ( <About data={data.about}/> )} />
-                        <Route path={process.env.PUBLIC_URL + '/contact'} render={(props) => ( <Contact data={data.contact} /> )} />
-                        <Route path={process.env.PUBLIC_URL + '/'} render={(props) => ( <Home data={data.home} /> )} />
+                        <Route path={process.env.PUBLIC_URL + '/projects'} render={() => ( <Projects data={data.projects} /> )} />
+                        <Route path={process.env.PUBLIC_URL + '/about'} render={() => ( <About data={data.about}/> )} />
+                        <Route path={process.env.PUBLIC_URL + '/contact'} render={() => ( <Contact data={data.contact} /> )} />
+                        <Route path={process.env.PUBLIC_URL + '/'} render={() => ( <Home data={data.home} /> )} />
                     </Switch>
                 </div>
             </Fragment>
@@ -51,6 +51,6 @@ class App extends Component {
 const mapStateToProps = state => ({
     isNavOpen: state.isNavOpen,
     language: state.language
-})
+});
 
 export default withRouter(connect(mapStateToProps, { toggleTitle, setActiveMenuItem  })(App));

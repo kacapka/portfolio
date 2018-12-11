@@ -114,6 +114,11 @@
     padding-left: 70px;
 }
 
+.projects__description__link {
+    color: var(--projects);
+    text-decoration: underline!important;
+}
+
 .projects__box {
     opacity: 1;
     transition: opacity .2s ease; 

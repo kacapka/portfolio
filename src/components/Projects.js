@@ -22,7 +22,7 @@ const projects = {
     mig: {
         name: 'Genius store',
         tools: ['React', 'Redux', 'Meteor', 'MongoDB', 'Sass'],
-        link: 'https://geniusstore.herokuapp.com',
+        link: 'https://madeingenius.herokuapp.com',
         source: 'https://github.com/kacapka/geniusstore'
     },
     portfolio: {

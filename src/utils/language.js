@@ -32,8 +32,7 @@ const lang = {
             description: {
                 cf: 'Strona boxu crossfitowego. Jest to mój pierwszy projekt wykonany w celu testowania oraz wdrażania nabytych umiejętności z użyciem html, css oraz JS. Tu napisałem pierszą funkcję, pierwszą animację oraz responsywny wygląd.',
                 bj: 'Wyszukiwarka lokali gastronomicznych dla miasta Warszawa. W ramach nauki postanowiłem przekóć mój niedoszly startup w działający produkt. Aplikacja webowa opierająca się głównie na interfejsie mapy. Projekt stworzony na paczce react-create-app. W celu autoryzacji uzytkowników oraz zastosowaniu bazy danych użyłem Firebase. (baza lokali nieaktualna).',
-                wt: 'Aplikacja webowa do zarządzania oraz sprzedaży planów treningowych. Projekt zawiera stronę dla użytkowników - sprzedaż planów i ich zawartość, oraz panelu admina - zarządzanie treścią. Po mojej stronie wykonana została część dla użytkowników oraz wygląd panelu admina. Jest to mój pierwszy projekt napisany w ReactJS - Redux.',
-                mig: 'Sklep internetowy z odzieżą marki GENIUS. Projekt obejmuje responsywną stornę dl klienta, oraz dedytkowany sytem cms dla właściciela. W celu testowania dostępnych funkcjonalności, oraz wglądu do panelu admina użyj loginu: TEST@ADMIN.PL oraz hasła: TESTADMIN.',
+                mig: <p>Sklep internetowy z odzieżą marki GENIUS. Projekt obejmuje responsywną stronę dla klienta, oraz dedytkowany system cms dla właściciela. Odwiedź <a href='https://madeingenius.herokuapp.com/admin' target='_blank' className='projects__description__link'>panel admin</a> aby przetestować funkcjonalność systemu cms, użyj loginu: test@admin.pl oraz hasła: testadmin.</p>,
                 portfolio: 'Projekt oparty na szablonie create-react-app. Prosty interfejs, który w głownej mierze oparty jest na dynamicznie zmienijących się stylach.'
             }
         },
